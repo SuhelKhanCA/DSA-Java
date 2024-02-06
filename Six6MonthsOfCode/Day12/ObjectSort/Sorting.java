@@ -11,7 +11,7 @@ public class Sorting {
         for (int i = 0; i < arrObj.length; i++) {
             System.out.println(arrObj[i]);
         }
-        Arrays.sort(arrObj, 1, 2, new SortByRoll());
+        Arrays.sort(arrObj, 0, 2, new SortByRoll());
         // Arrays.sort(arrObj);
         System.out.println("\n----------Sorted by roll no------");
         for (int i = 0; i < arrObj.length; i++) {
