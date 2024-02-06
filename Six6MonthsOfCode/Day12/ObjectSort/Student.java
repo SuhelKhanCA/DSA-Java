@@ -14,7 +14,6 @@ public class Student {
 
     // overriding toString() method for Student classs
     public String toString(){
-        
+        return this.rollNo + "---" + this.name + "---" + this.address;
     }
-
-}
+} // end of class Student
