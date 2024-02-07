@@ -89,23 +89,23 @@ class GenericLimitationDemo {
 
         // Compare marks between s2 and s3
 
-        if (s2IntMarks.compareMarks(s3DoubleMarks)) // ERROR!
+        // if (s2IntMarks.compareMarks(s3DoubleMarks)) // ERROR!
 
-            System.out.println("Same marks");
+        //     System.out.println("Same marks");
 
-        else
+        // else
 
-            System.out.println("Different marks.");
+        //     System.out.println("Different marks.");
 
-        // Compare marks between s3 and s4
+        // // Compare marks between s3 and s4
 
-        if (s3DoubleMarks.compareMarks(s4FloatMarks)) // ERROR!
+        // if (s3DoubleMarks.compareMarks(s4FloatMarks)) // ERROR!
 
-            System.out.println("Same marks");
+        //     System.out.println("Same marks");
 
-        else
+        // else
 
-            System.out.println("Different marks.");
+        //     System.out.println("Different marks.");
 
     }
 
