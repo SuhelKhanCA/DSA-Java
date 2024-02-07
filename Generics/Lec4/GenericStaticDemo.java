@@ -6,20 +6,19 @@ class GenericStaticDemo<T> {
 
     // Defining a static generic method to print any data type
 
-    void gPrint(T t) {
+   static <T> void gPrint(T t) {
 
         System.out.println(t);
 
     }
 
     public static void main(String[] args) {
-        GenericStaticDemo tObj = new GenericStaticDemo<>();
+        
+        gPrint(101);// Calling generic method with Integer argument
 
-        tObj.gPrint(101);// Calling generic method with Integer argument
+        gPrint("Joy with Java"); // Calling generic method with String argument
 
-        tObj.gPrint("Joy with Java"); // Calling generic method with String argument
-
-        tObj.gPrint(3.1412343);// Calling generic method with double argument
+        gPrint(3.1412343);// Calling generic method with double argument
 
     }
 
