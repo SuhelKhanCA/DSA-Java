@@ -58,6 +58,15 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
             temp.next = newNode;
         }
     }
+    public void merge(JLinkedList<T> l2){
+        Node l1Node = this.head;
+        Node l2Node = l2.head;
+        while (l1Node.next != null) {
+            l1Node = l1Node.next;
+        }
+        l1Node.next = l2Node.next;
+        // No need to free l2.head, Java will take care of it
+    }
 
     /* PRINTING THE LINKED-LIST */
     public void printList(){
