@@ -32,7 +32,7 @@ class Aquatic extends Animal {
 
     Aquatic(long years, float kg, boolean skin) {
 
-        super(years, kgs); // Super class constructor
+        super(years, kg); // Super class constructor
 
         scale = skin;
 
@@ -54,7 +54,7 @@ class Land extends Animal {
 
     Land(long years, float kg, short vision) {
 
-        super(years, kgs); // Super class constructor
+        super(years, kg); // Super class constructor
 
         this.vision = vision;
 
@@ -212,161 +212,152 @@ class BoundedWildcards {
 class BoundedWildcardArgumentsDemo {
 
     public static void main(String args[]) {
-    
 
-     // Create a list of unknown animals of class Animal
-    
-     Animal unknown = new Animal(40, 720);
-    
-     // An unknown animal object is created
-    
-     Animal u [] = {unknown}; // Array of unknown animals
-    
-     AnimalWorld<Animal> uList = new AnimalWorld<Animal>(u);
-    
-     // Place the unknown into a list
-     // Create a list of aquatic animals
-    
-     Aquatic whale = new Aquatic(90, 150000);
-    
-     // A whale object is created
-    
-     Aquatic shark = new Aquatic(400, 2150);
-    
-     // A shark object is created
-    
-     Animal q [] = { whale, shark };
-    
-     // Array of aquatic animals
-    
-     AnimalWorld<Aquatic> qList = new AnimalWorld<Aquatic>(q);
-    
-     // Place the aquatics into a list
-    
-    // Create a list of land animals
-    
-     Land owl = new Land(3, 1, 0);
-    
-     // A land owl object is created
-    
-     Land l [] = { owl }; // An array of land objects is created
-    
-     AnimalWorld<Land> lList = new AnimalWorld<Land>(l);
-    
-     // Place the animals into a list
-    
-    
-     // Create a list of pet animals
-    
-     Pet dog = new Pet(15, 75, 2, "Prince");
-    
-     // A pet dog object is created
-    
-     Pet p [] = { new Pet(15, 75, 2, "Prince") };
-    
-     // An array of pet objects is created
-    
-     AnimalWorld<Pet> pList = new AnimalWorld<Pet>(p);
-    
-     // Place the pets into a list
-    
-    // Create a list of wild animals
-    
-     Wild cheetah = new Land(15, 75, 2);
-    
-     // A cheetah object is created
-    
-     Wild deer = new Land(10, 50, 1);
-    
-     // A deer object is created 
-    
-     Wild w [] = { cheetah, deer };
-    
-     // Array of non-aquatic animals
-    
-     AnimalWorld<Wild> wList = new AnimalWorld<Wild>(w);
-    
-     // Place the wilds into a list
-    
-    // Call the methods and see the outcomes
-    
-     // vitality() is with unlimited wildcard argument and
-    
-     // hence we can pass argument of any type
-    
-     vitality (uList); // OK
-    
-     vitality (qList); // OK
-    
-     vitality (lList); // OK
-    
-     vitality (pList); // OK
-    
-     vitality (wList); // OK
-    
-     
-    
-    // showSea(�) is with lower bound wildcard argument with
-    
-    ����������� // class Aquatic and its super classes
-    
-     showSea (uList);����� // OK
-    
-     showSea (qList);���� // OK
-    
-     showSea (lList);// Compile-time error
-    
-     showSea (pList); // Compile-time error
-    
-     showSea (wList); // Compile-time error
-    
-     
-    
-    // showLand() is with upper bound wildcard argument with
-    
-     // class Land and its subclasses
-    
-     showLand (uList); // Compile-time error
-    
-     showLand (qList); // Compile-time error
-    
-     showLand (lList); // OK
-    
-     showLand (pList); // OK
-    
-     showLand (wList); // OK
-    
-     
-    
-    // showPet() is with upper bound wildcard argument with
-    
-     // class Pet and its subclasses
-    
-     showPet (uList); // Compile-time error
-    
-     showPet (qList); // Compile-time error
-    
-     showPet (lList); // Compile-time error
-    
-     showPet (pList); // OK
-    
-     showPet (wList); // Compile-time error
-    
-    
-    // showWild() is with upper bound wildcard argument with
-    
-     // class Wild and its sub classes
-    
-     showWild (uList); // Compile-time error
-    
-     showWild (qList); // Compile-time error
-    
-     showWild (lList); // Compile-time error
-    
-     showWild (pList); // Compile-time error
-    
-     showWild (wList); // OK
-    
-     }
+        // Create a list of unknown animals of class Animal
+
+        Animal unknown = new Animal(40, 720);
+
+        // An unknown animal object is created
+
+        Animal u[] = { unknown }; // Array of unknown animals
+
+        AnimalWorld<Animal> uList = new AnimalWorld<Animal>(u);
+
+        // Place the unknown into a list
+        // Create a list of aquatic animals
+
+        Aquatic whale = new Aquatic(90, 150000);
+
+        // A whale object is created
+
+        Aquatic shark = new Aquatic(400, 2150);
+
+        // A shark object is created
+
+        Animal q[] = { whale, shark };
+
+        // Array of aquatic animals
+
+        AnimalWorld<Aquatic> qList = new AnimalWorld<Aquatic>(q);
+
+        // Place the aquatics into a list
+
+        // Create a list of land animals
+
+        Land owl = new Land(3, 1, 0);
+
+        // A land owl object is created
+
+        Land l[] = { owl }; // An array of land objects is created
+
+        AnimalWorld<Land> lList = new AnimalWorld<Land>(l);
+
+        // Place the animals into a list
+
+        // Create a list of pet animals
+
+        Pet dog = new Pet(15, 75, 2, "Prince");
+
+        // A pet dog object is created
+
+        Pet p[] = { new Pet(15, 75, 2, "Prince") };
+
+        // An array of pet objects is created
+
+        AnimalWorld<Pet> pList = new AnimalWorld<Pet>(p);
+
+        // Place the pets into a list
+
+        // Create a list of wild animals
+
+        Wild cheetah = new Land(15, 75, 2);
+
+        // A cheetah object is created
+
+        Wild deer = new Land(10, 50, 1);
+
+        // A deer object is created
+
+        Wild w[] = { cheetah, deer };
+
+        // Array of non-aquatic animals
+
+        AnimalWorld<Wild> wList = new AnimalWorld<Wild>(w);
+
+        // Place the wilds into a list
+
+        // Call the methods and see the outcomes
+
+        // vitality() is with unlimited wildcard argument and
+
+        // hence we can pass argument of any type
+
+        vitality(uList); // OK
+
+        vitality(qList); // OK
+
+        vitality(lList); // OK
+
+        vitality(pList); // OK
+
+        vitality(wList); // OK
+
+        // showSea() is with lower bound wildcard argument with
+
+        // class Aquatic and its super classes
+
+        showSea(uList); // OK
+
+        showSea(qList); // OK
+
+        showSea(lList);// Compile-time error
+
+        showSea(pList); // Compile-time error
+
+        showSea(wList); // Compile-time error
+
+        // showLand() is with upper bound wildcard argument with
+
+        // class Land and its subclasses
+
+        showLand(uList); // Compile-time error
+
+        showLand(qList); // Compile-time error
+
+        showLand(lList); // OK
+
+        showLand(pList); // OK
+
+        showLand(wList); // OK
+
+        // showPet() is with upper bound wildcard argument with
+
+        // class Pet and its subclasses
+
+        showPet(uList); // Compile-time error
+
+        showPet(qList); // Compile-time error
+
+        showPet(lList); // Compile-time error
+
+        showPet(pList); // OK
+
+        showPet(wList); // Compile-time error
+
+        // showWild() is with upper bound wildcard argument with
+
+        // class Wild and its sub classes
+
+        showWild(uList); // Compile-time error
+
+        showWild(qList); // Compile-time error
+
+        showWild(lList); // Compile-time error
+
+        showWild(pList); // Compile-time error
+
+        showWild(wList); // OK
+
+    }
 
 }
