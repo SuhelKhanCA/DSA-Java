@@ -1,4 +1,4 @@
-package LinkedList.Insertion;
+// package LinkedList.Insertion;
 /**
  * JLinkedList
  */
@@ -43,5 +43,33 @@ public class JLinkedList<T> {
         }
         temp.next = newNode;
     }
-
+    /* ======= INSERTION AT ANY POSITION */
+    public void insertKey(T data, T key){
+        Node newNode = new Node(data);
+        newNode.next = null;
+        Node temp = this.head;
+        boolean status = false;
+        while (temp != null) {
+            if (temp.data == key) {
+                status = true;
+                break;
+            } 
+            temp = temp.next;
+        }
+        if (status) {
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+    }
+    /* ===========PRINTING THE LINKED LIST============ */
+    public void printList(){
+        Node currNode = this.head.next;
+        System.out.print("Linked-list:");
+        // traverse the linked-list
+        while (currNode != null) {
+            System.out.print(currNode.data + " "); // print the current node content
+            currNode = currNode.next; // go to the next node
+        }
+        System.out.println();
+    }
 }
