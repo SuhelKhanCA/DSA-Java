@@ -72,6 +72,18 @@ public class JLinkedList<T> {
         }
         System.out.println();
     }
+    /*===========Deletion at front============ */
+    public T deleteFront(){
+        T x = null;
+        Node temp = this.head.next , prev = null; // ==>> prev NOT used
+        if (temp != null) {
+            x = temp.data;
+            this.head.next = temp.next; // changed the head
+            // Display the message
+            System.out.println("Element deleted");
+        }
+        return x; // returned the deleted node
+    }
 
     // public void merge(JLinkedList<Integer> list2) {
     //     // TODO Auto-generated method stub

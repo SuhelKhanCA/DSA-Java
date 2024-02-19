@@ -75,7 +75,7 @@ public class JLinkedList<T>{
     /*===========Deletion at front============ */
     public T deleteFront(){
         T x = null;
-        Node temp = this.head.next , prev = null;
+        Node temp = this.head.next , prev = null; // ==>> prev NOT used
         if (temp != null) {
             x = temp.data;
             this.head.next = temp.next; // changed the head
