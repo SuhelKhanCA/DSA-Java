@@ -14,6 +14,6 @@ public class MergeDemo<T> {
         System.out.print("Second Linked-list: ");
         list2.printList();
         // merging the list
-        // list1.merge(list2); //==>> Throwing Error
+        list1.merge(list2); //==>> Throwing Error
     }
 }

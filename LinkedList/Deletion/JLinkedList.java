@@ -85,12 +85,25 @@ public class JLinkedList<T>{
         return x; // returned the deleted node
     }
     /* ==================MERGE====================== */
+    // public void merge(JLinkedList<T> l2){
+    //     Node l1Node  = this.head;
+    //     Node l2Node = l2.head;
+    //     while (l1Node.next != null) {
+    //         l1Node = l1Node.next;
+    //     }
+    //     l1Node.next = l2Node.next;
+    // }
     public void merge(JLinkedList<T> l2){
         Node l1Node  = this.head;
         Node l2Node = l2.head;
+        if(l1Node == null) {
+            this.head = l2Node;
+            return;
+        }
         while (l1Node.next != null) {
             l1Node = l1Node.next;
         }
-        l1Node.next = l2Node.next;
+        l1Node.next = l2Node;
     }
+    
 }
