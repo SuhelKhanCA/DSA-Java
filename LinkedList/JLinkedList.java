@@ -1,25 +1,30 @@
 // This program show how to define a singly linked-list
-public class JLinkedList<T>{ // EXAMPLE 18.1
+public class JLinkedList<T> { // EXAMPLE 18.1
     Node head; // head of list
-    class Node{
+
+    class Node {
         T data;
         Node next;
+
         // constructor
-        Node(){
+        Node() {
             data = null;
             next = null;
         }
-        Node(T d){
+
+        Node(T d) {
             data = d;
             next = null;
         }
     }
-    JLinkedList(){ // Linked-list HEADER node
+
+    JLinkedList() { // Linked-list HEADER node
         head = new Node();
     }
+
     // Methods to manipulate linked-list to be defined
     /* Defining the method to insert at the front of list */
-    public void insertFront(T data){
+    public void insertFront(T data) {
         // create a new node with given data
         Node newNode = new Node(data);
         newNode.next = this.head.next;
@@ -28,7 +33,7 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
     }
 
     /* INSERTION AT END */
-    public void insertionEnd(T data){
+    public void insertionEnd(T data) {
         Node newNode = new Node(data);
         newNode.next = null;
         Node temp = this.head;
@@ -40,7 +45,7 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
     }
 
     /* INSERTION AT ANY POSITION */
-    public void insertKey(T data, T key){
+    public void insertKey(T data, T key) {
         Node newNode = new Node(data);
         newNode.next = null;
         Node temp = this.head;
@@ -51,14 +56,15 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
                 break;
             }
             temp = temp.next;
-            
+
         }
         if (status) {
             newNode.next = temp.next;
             temp.next = newNode;
         }
     }
-    public void merge(JLinkedList<T> l2){
+
+    public void merge(JLinkedList<T> l2) {
         Node l1Node = this.head;
         Node l2Node = l2.head;
         while (l1Node.next != null) {
@@ -69,7 +75,7 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
     }
 
     /* PRINTING THE LINKED-LIST */
-    public void printList(){
+    public void printList() {
         Node curNode = this.head.next;
         System.out.print("LinkedList: ");
         // traverse through linked-list
@@ -81,15 +87,17 @@ public class JLinkedList<T>{ // EXAMPLE 18.1
         }
         System.out.println();
     }
-    class LinkedListInsertionDemo{
-        public static void main(String[] args) {
-            JLinkedList<Integer> list = new JLinkedList<Integer>();
-            list.insertionEnd(9);
-            list.printList();
-            list.insertFront(5);
-            list.printList();
-            list.insertKey(7, 5);
-            list.printList();
-        }
+
+}
+
+class LinkedListInsertionDemo {
+    public static void main(String[] args) {
+        JLinkedList<Integer> list = new JLinkedList<Integer>();
+        list.insertionEnd(9);
+        list.printList();
+        list.insertFront(5);
+        list.printList();
+        list.insertKey(7, 5);
+        list.printList();
     }
 }
