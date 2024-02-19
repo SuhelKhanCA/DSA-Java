@@ -72,4 +72,14 @@ public class JLinkedList<T> {
         }
         System.out.println();
     }
+
+    // public void merge(JLinkedList<Integer> list2) {
+    //     // TODO Auto-generated method stub
+    //     throw new UnsupportedOperationException("Unimplemented method 'merge'");
+    // }
+
+    // public void merge() {
+    //     // TODO Auto-generated method stub
+    //     throw new UnsupportedOperationException("Unimplemented method 'merge'");
+    // }
 }
