@@ -1,4 +1,5 @@
 // This program show how to define a singly linked-list
+package Intro;
 public class JLinkedList<T> { // EXAMPLE 18.1
     Node head; // head of list
 
