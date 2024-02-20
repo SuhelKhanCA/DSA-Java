@@ -8,8 +8,8 @@ package Intro;
 // This program shows how to define a (single) linked list
 // package LinkedList.Insertion;
 
-import JLinkedList;
-import JLinkedList.Node;
+// import JLinkedList;
+// import JLinkedList.Node;
 
 class JLinkedList<T> {
 
