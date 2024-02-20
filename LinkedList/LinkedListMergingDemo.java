@@ -5,6 +5,7 @@
 // Example 18.8: Creating a single linked list, insertion, merging and printing (driver class)
 
 // This program shows how to define a (single) linked list
+// package LinkedList.Insertion;
 
 class JLinkedList<T> {
 
@@ -161,6 +162,8 @@ class JLinkedList<T> {
         // free(l2.head); // Return the node to free memory
 
     }
+
+    
 
 } // End of declaration of JLiknkedList<T>
 
