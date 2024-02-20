@@ -19,7 +19,7 @@ public class CreatingLinkedList {
         // printing the list using an iterator
         System.out.println("==========Printing via 'itr' object==========");
         Iterator<String> itr = l1.iterator();
-        while (itr.hasNext()){
+        while (itr.hasNext()) {
             System.out.print(itr.next() + ", ");
         }
         System.out.println();
@@ -27,5 +27,6 @@ public class CreatingLinkedList {
         System.out.println("========Printing using enhanced for loop=======");
         for (String s : l1) {
             System.out.print(s + ", ");
+        }
     }
 }
