@@ -1,3 +1,4 @@
+package Intro;
 //Example 18.7: Declaring a method to merge two lists
 
 /* For the sake of completion, use the declaration of JLinkedList<T> here first and then add the method for merging. */
@@ -6,6 +7,9 @@
 
 // This program shows how to define a (single) linked list
 // package LinkedList.Insertion;
+
+import JLinkedList;
+import JLinkedList.Node;
 
 class JLinkedList<T> {
 

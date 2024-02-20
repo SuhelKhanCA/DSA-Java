@@ -1,5 +1,7 @@
 // package Deletion;
 
+import Intro.JLinkedList;
+
 public class JLinkedList<T> {
     Node head;
 

@@ -1,5 +1,7 @@
 // package Deletion;
 
+import Intro.JLinkedList;
+
 public class DeletionDemo {
     public static void main(String[] args) {
         JLinkedList<Integer> list = new JLinkedList<Integer>();

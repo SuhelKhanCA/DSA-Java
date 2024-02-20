@@ -1,5 +1,7 @@
 // package LinkedList.Insertion;
 
+import Intro.JLinkedList;
+
 public class InsertionDemo {
     public static void main(String[] args) {
         JLinkedList<Integer> list = new JLinkedList<>();
