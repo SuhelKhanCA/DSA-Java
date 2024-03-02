@@ -149,6 +149,26 @@ public class JLinkedList<T> {
             }
         }
     }
+
+    // Method to reverse a linked-list
+    public Node remove(Node n){
+        Node current = n;
+        Node next = n.next;
+        Node prev = null;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        this.head.next = prev;
+        return next;
+    }
+    public void reverse(){
+        Node currNode = this.head.next;
+        System.out.print("Reversed list:");
+        remove(currNode);
+    }
 }
 
 class DeletionDemo2 {
@@ -186,5 +206,6 @@ class DeletionDemo2 {
         // list.deleteEnd();
 
         list.printList();
+        list.reverse();
     }
 }
