@@ -123,4 +123,12 @@ public class JLinkedList<T> {
             }
         }
     }
+    // isEmpty()
+    boolean isEmpty(){
+        if (head.next == null) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
