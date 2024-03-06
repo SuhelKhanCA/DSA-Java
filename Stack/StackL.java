@@ -44,6 +44,10 @@ public class StackL<T> {
             return false;
         }
     }
+    // peep() method
+    T peep(){
+        return top();
+    }
 
     // printing stackL
     void printStack(){
