@@ -4,7 +4,7 @@ package Generics.Lec2;
 
 class SwapTest2<T> {
 
-    public void swap(T x, T y) {
+    public static <T> void swap(T x, T y) {
 
         T temp;
 
@@ -19,13 +19,13 @@ class SwapTest2<T> {
     public static void main(String args[]) {
         SwapTest2 tst2 = new SwapTest2<>();
 
-        Double x = new Double(99.0);
+        double x = 99.0;
 
-        Double y = new Double(66.0);
+        double y = 66.0;
 
         System.out.println("x = " + x + "y = " + y);
 
-        tst2.swap(x, y);
+        swap(x, y);
 
         System.out.println("x = " + x + "y = " + y);
 

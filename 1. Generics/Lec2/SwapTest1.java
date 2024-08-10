@@ -36,6 +36,15 @@ class SwapTest1<T> {
         System.out.println("x = " + s1 + ":  y = " + s2);
         swap(s1, s2);
 
+        // for double
+        double d1 = 99.0;
+
+        double d2 = 66.0;
+
+        System.out.println("d1 = " + d1 + "d2 = " + d2);
+
+        swap(d1, d1);
+
     }
 
 }
