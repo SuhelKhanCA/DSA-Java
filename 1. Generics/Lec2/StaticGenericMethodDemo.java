@@ -24,3 +24,8 @@ class StaticGenericMethodDemo {
     }
 
 }
+
+// OUTPUT:
+// java.lang.Integer:101
+// java.lang.String:Joy with Java
+// java.lang.Double:3.1412343
