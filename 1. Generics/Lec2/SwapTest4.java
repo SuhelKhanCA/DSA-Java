@@ -1,6 +1,7 @@
 //Example 2.6: Swap method with Object as parameters
 package Generics.Lec2;
-class Person {
+
+class Person<T> {
 
     String name;
 
@@ -10,22 +11,6 @@ class Person {
 
         this.name = name;
         this.marks = marks;
-
-    }
-
-}
-
-class SwapTest4 {
-
-    public static void swap(Object x, Object y) {
-
-        Object t;
-
-        t = x;
-
-        x = y;
-
-        y = t;
 
     }
 
@@ -39,7 +24,21 @@ class SwapTest4 {
 
         swap(p1, p2);
 
-        System.out.println("p1 = " + p1 + "y = " + p2);
+        // System.out.println("p1 = " + p1 + "y = " + p2);
+
+    }
+
+    public static <T> void swap(T x, T y) {
+
+        T t;
+
+        t = x;
+
+        x = y;
+
+        y = t;
+
+        System.out.println("p1 = " + x + "p2 = " + y); // it solve prob of referencing
 
     }
 
