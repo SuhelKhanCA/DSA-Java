@@ -6,7 +6,7 @@ class VarargsMethodDemo2 {
 
     // Defining a varargs method using ellipsis
 
-    static void varargsMethod2(int... v) {
+    static void varargsMethod2(int ...v) {
 
         System.out.println("Number of arguments: " + v.length);
 
