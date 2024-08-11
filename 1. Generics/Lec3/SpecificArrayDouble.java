@@ -1,4 +1,4 @@
-package Generics.Lec3;
+// package Generics.Lec3;
 
 // Example 3.2: Program to handle an array of doubles
 
