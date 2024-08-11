@@ -1,4 +1,4 @@
-package Generics.Lec4;
+// package Generics.Lec4;
 
 // Example 4.6: Another example of a generic class with multiple parameters
 
