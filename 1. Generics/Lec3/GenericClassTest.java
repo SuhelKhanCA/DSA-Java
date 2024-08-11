@@ -1,4 +1,4 @@
-package Generics.Lec3;
+// package Generics.Lec3;
 
 // Example 3.4: Defining a generic class
 
