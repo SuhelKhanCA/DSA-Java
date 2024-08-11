@@ -28,7 +28,7 @@ class GenericClass<T> {
 
 // The driver class is defined below, which creates different types of arrays.
 
-class GenericClassTest {
+public class GenericClassTest {
 
   public static void main(String args[]) {
 

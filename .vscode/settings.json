@@ -1,3 +1,9 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "2. Array/Day17",
+        "2. Array/01Day",
+        "2. Array",
+        "1. Generics/Lec3"
+    ]
 }
