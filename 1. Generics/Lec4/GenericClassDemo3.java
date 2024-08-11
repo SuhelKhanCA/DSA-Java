@@ -1,4 +1,4 @@
-package Generics.Lec4;
+// package Generics.Lec4;
 
 // Example 4.3: A generic class should be declared with class type only; not with primitive data types
 
