@@ -1,4 +1,4 @@
-package Generics.Lec5;
+// package Generics.Lec5;
 
 // Example 5.2 : Upper bound of argument in generic class definition
 
