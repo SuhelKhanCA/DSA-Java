@@ -1,4 +1,4 @@
-package Generics.Lec4;
+// package Generics.Lec4;
 // Example 4.4: A generic class with multiple type parameters
 
 class GenericClass<T, V> {// Use < > to specify class type
