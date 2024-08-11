@@ -1,4 +1,4 @@
-package Generics.Lec5;
+// package Generics.Lec5;
 
 // Example 5.4: Generic class with wildcard argument
 
