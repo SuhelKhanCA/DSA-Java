@@ -1,5 +1,5 @@
 // Example 4.5: Generic class with two parameters
-package Generics.Lec4;
+// package Generics.Lec4;
 
 class GC2<T1, T2> {
 
