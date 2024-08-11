@@ -1,4 +1,4 @@
-package Generics.Lec4;
+// package Generics.Lec4;
 
 // Example 4.2: A generic method or any method in a class can be declared as a static method
 
@@ -15,7 +15,7 @@ class GenericClass<T> { // Use < > to specify class type
     }
 }
 
-class GenericStaticDemo2 {
+public class GenericStaticDemo2 {
 
     public static void main(String args[]) {
     

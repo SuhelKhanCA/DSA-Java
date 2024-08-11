@@ -1,4 +1,4 @@
-package Generics.Lec4;
+// package Generics.Lec4;
 
 // Example 4.1: A generic method in a generic class can be declared as static
 
