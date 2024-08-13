@@ -10,3 +10,17 @@ class StringParsingDemo1 {
         }
     }
 }
+/*
+
+Improvement:
+
+public static void main(String[] args) {
+    String str = "Joy with Java";
+    String[] tokens = str.split(" ");
+    
+    for (String token : tokens) {
+        System.out.println(token);
+    }
+}
+
+ */
