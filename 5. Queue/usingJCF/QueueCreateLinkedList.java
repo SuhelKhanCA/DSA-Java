@@ -10,5 +10,15 @@ public class QueueCreateLinkedList {
         }
 
         System.out.println("Queue contains : " + queue);
+        
+        int x = queue.remove(); // remove the head
+        System.out.println("The deleted element is: " + x);
+
+        System.out.println("\nNow queue contains: " + queue);
+        
+        int head = queue.peek(); // remove the head
+        System.out.println("Head of the quueue is: " + head);
+
+        System.out.println("Size of queue : " + queue.size());
     }
 }
