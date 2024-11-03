@@ -57,6 +57,9 @@ public class QueueA<T> {
         q.enque(1);
         q.enque(2);
         q.enque(3);
+        System.out.println(q.front);
+        System.out.println(q.rear);
+       
         System.out.println("Print Queue");
         q.printQueue();
         q.deque();
@@ -65,5 +68,10 @@ public class QueueA<T> {
         q.printQueue();
 
         System.out.println("Is Queue empty : " + q.isEmpty());
+
+        System.out.println();
+
+        System.out.println(q.front);
+        System.out.println(q.rear);
     }
 }
