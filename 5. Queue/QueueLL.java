@@ -1,54 +1,47 @@
-import java.util.*;
+import java.util.LinkedList;
 
 public class QueueLL<T> {
-    LinkedList<T> front, rear;
+    LinkedList<T> list;
 
-    public QueueL() {
-        front = new LinkedList<T>();
-        rear = front;
+    public QueueLL() {
+        list = new LinkedList<>();
     }
 
-    // enque
+    // Enqueue
     public void enqueue(T a) {
-        this.rear.addLast(a); // ll method
+        list.addLast(a); // LinkedList method to add at the end
     }
 
-    // deque
+    // Dequeue
     public T dequeue() {
         if (!this.isEmpty()) {
-            return this.front.removeFirst(); // ll method
+            return list.removeFirst(); // LinkedList method to remove from the front
         } else {
             System.out.println("Queue underflow");
             return null;
         }
     }
 
-    // isEmpty
+    // Check if the queue is empty
     public boolean isEmpty() {
-        return this.front.isEmpty();
+        return list.isEmpty();
     }
 
-    // print queue
+    // Print queue
     void printQueue() {
-        if (this.front.isEmpty()) {
+        if (list.isEmpty()) {
             System.out.println("Queue is empty");
         } else {
-            System.out.println("Queue elements: ");
-            
-            LinkedList<T> tmp = this.front;
-
-            while (tmp != null) {
-                System.out.println(tmp + " ");
-                tmp.pop();
-                tmp = this.front;
+            System.out.println("Queue elements:");
+            for (T element : list) {
+                System.out.println(element + " ");
             }
-
         }
     }
 
-    // main method
+    // Main method
     public static void main(String[] args) {
-        QueueLL<String> q = new QueueLL<String>();
+        QueueLL<String> q = new QueueLL<>();
         q.enqueue("Apple");
         q.enqueue("Banana");
         q.enqueue("Cherry");
