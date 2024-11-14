@@ -9,8 +9,9 @@ public class HashSetDemo {
 
         // add elements to the set
         hs.add("Sarim");
-        hs.add("Shibli");
         hs.add("Khushnood");
+        hs.add("Asjad");
+        hs.add("Shibli");
         hs.add("Suhel");
         System.out.println(hs);
     }
