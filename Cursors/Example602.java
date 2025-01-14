@@ -17,7 +17,7 @@ public class Example602 {
             int i = itr.next(); // Read the current element
             System.out.print(i + " ");
 
-            if (i % 2 == 0) {
+            if (i % 2 != 0) {
                 itr.remove(); // remove the odd numbers
             }
         }
